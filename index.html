@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-ez3t7zrlz6V5UpADPFs3PFpLc8Mnb6VJ4ZlXFHHx6z6ESeiKKFzFk5U9wZOiM4nD" crossorigin="anonymous">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/icons8-s-80.png" type="image/x-icon">
+  <title>sanjoy</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header p {
+        transition: color 0.5s ease-in-out; /* Add a smooth color transition */
+      }
+      header h1{
+        font-family: Inconsolata, monospace;
+      }
+      
+      @keyframes changeColor {
+        0% {
+          color: #fff; /* Initial color */
+        }
+        50% {
+          color: #ffcc00; /* Intermediate color */
+        }
+        100% {
+          color: #00ccff; /* Final color */
+        }
+      }
+      
+      header p {
+        animation: changeColor 5s 1s infinite; /* Delay the animation by 1 second, then repeat indefinitely */
+      }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fdfdfd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project h3,
+.project p {
+  text-align: left;
+}
+.more_link{
+    text-align: left;
+  }
+
+    .project {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .project h3 {
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    #data-container {
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    #data {
+      font-size: 22px;
+      color: #8cc6ed;
+      transition: color 0.3s ease-in-out;
+    }
+
+    #data.role-change {
+      animation: changeRole 6s linear infinite;
+    }
+
+    @keyframes changeRole {
+      0%, 33.33% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      44.44%, 77.77% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      88.88%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .button {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: 1px solid #3498db;
+        color: #3498db;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        margin: 5px 0;
+      }
+.sml-abt{
+  font-family: serif;
+  font-size: 25px;
+}
+      .wel{
+        
+          color: #3498db;
+          font-family: 'Arial', sans-serif;
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+        
+        
+      }
+  
+      /* Style for the download button */
+      #downloadButton {
+        background-color: #3498db;
+        color: #fff;
+      }
+      .button:hover, #downloadButton:hover {
+        background-color: #3498db;
+        color: #fff;
+      }
+  
+      /* Media query for responsiveness */
+      @media only screen and (max-width: 600px) {
+        .button {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      a {
+        text-decoration: none; /* Remove the underline */
+        color: #79bdeb; /* Set the link color, you can change it to your preferred color */
+      }
+      
+      a:hover {
+        text-decoration: underline; /* Add underline on hover if desired */
+      }
+
+      
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>sanjoy</h1>
+    <p id="data" class="role-change">data scientist</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="project.html">Project</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2 class="wel">Welcome!</h2>
+    <p class="sml-abt">Hey there!, I'm sanjoy mondal, a data lover.</p>
+    <div class="buttons-container">
+        <button class="button" onclick="resumeDownload()">Download CV</button>
+      </div>
+  </section>
+
+
+
+  <footer>
+    <p>&copy; 2023 sanjoymondal🙂</p>
+  </footer>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      cycleRoles();
+    });
+
+    function cycleRoles() {
+      const webElement = document.getElementById("data");
+      setTimeout(function () {
+        changeRole("Data Scientist");
+        setTimeout(function () {
+          changeRole("Data Engineer");
+          setTimeout(function () {
+            changeRole("Data Analyst");
+            setTimeout(function () {
+              changeRole("Data Scientist");
+              setTimeout(function () {
+                changeRole("Data Scientist");
+                cycleRoles();
+              }, 2000);
+            }, 2000);
+          }, 2000);
+        }, 2000);
+      }, 0);
+    }
+
+    function changeRole(role) {
+      const webElement = document.getElementById("data");
+      webElement.classList.remove("role-change");
+      webElement.textContent = role;
+      setTimeout(function () {
+        webElement.classList.add("role-change");
+      }, 100);
+    }
+
+    function resumeDownload() {
+        // Replace 'your-download-link' with the actual link to the file you want to download
+        var downloadLink = 'https://drive.google.com/file/d/1KaEdVg6gv_bKO5Zp9nSHZWjgNa1xd3wX/view?usp=sharing';
+        
+        // Create an anchor element
+        var anchor = document.createElement('a');
+        
+        // Set the href attribute to the download link
+        anchor.href = downloadLink;
+        
+        // Simulate a click on the anchor element to start the download
+        anchor.click();
+    }
+  </script>
+
+</body>
+</html>
