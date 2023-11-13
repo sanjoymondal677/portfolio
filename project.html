@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= 'https://fonts.googleapis.com/css?family=Lobster|Great+Vibes|Satisfy|Inconsolata|Open+Sans' rel='stylesheet' /> 
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-details {
+            max-width: 70%;
+            margin-left: 15px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .project p {
+            color: #666;
+            font-family: Inconsolata;
+        }
+
+        .github-link {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-link:hover {
+            background-color: #0056b3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ddd;
+            padding: 10px;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+     
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s; /* Add a smooth transition effect on color change */
+        }
+    
+        nav a:hover {
+            color: #f7c8c8; /* Change the color on hover */
+        }
+        .first-word {
+            font-weight: bold;
+            font-size: 20px;
+          }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <div class="project">
+            <div class="project-details">
+                <h3>Heart Failure Prediction</h3>
+                <p><span class="first-word">P</span>erform the Data analysis on the Heart Failure data set and draw insights.</p>
+                <p><span class="first-word">T</span>hrough this visualization easily understand what type of people have a high chance of getting Heart
+                    failure.</p>
+                    <p><span class="first-word">W</span>ith the help of Various machine learning algorithms predict the accuracy of a chance of Heart
+                        Failure.</p>
+                <p><span class="first-word">A</span>ccuracy -> 84%-87% | Tchnologies used - <b>Python</b>, <b>Statistics</b>, <b>EDA</b>, and <b>classification ML Algorithms.</b></p>
+                <a href="https://github.com/sanjoymondal677/Machine-Learning-Projects-Supervised-learning-/blob/main/Heart%20Failure%20Prediction.ipynb" class="github-link">GitHub Link</a>
+            </div>
+            <img src="./images/Heart Failure Data set.png" alt="Project 1 Image">
+        </div>
+
+        <div class="project">
+            <div class="project-details">
+                <h3>Car Price Prediction</h3>
+                <p><span class="first-word">P</span>erformed Exploratory data analysis and found the predicted score (car price) based on the features
+                    data have in the data sets.</p>
+                <p><span class="first-word">W</span>ith the help of this visualization, we can easily predict the new car price.</p>
+                    <p><span class="first-word">U</span>sing two Machine Learning Algorithms, Regressor model Decision Tree
+                        Regressor and Random Forest Regressor.</p>
+                <p><span class="first-word">A</span>ccuracy: 90% | Technologies used - Python, Statistics, EDA, and Regression ML Algorithms.</p>
+                <a href="https://github.com/sanjoymondal677/Car_Price_Prediction" class="github-link">GitHub Link</a>
+            </div>
+            <img src="./images/undraw_visual_data_re_mxxo.svg" alt="Project 2 Image">
+        </div>
+
+        <div class="project">
+            <div class="project-details">
+                <h3>Big Mart Sales Analysis</h3>
+                <p><span class="first-word">D</span>ata analysis on Big-mart sales over time and draw insights from the data</p>
+                <p><span class="first-word">B</span>y this visualisation easily understand big mart sales views like losses, and profit in different cities.</p>
+                    <p><span class="first-word">W</span>ith the help of this analysis can decide which products in which cities should more focus and
+                        increase sales and provide good customer service.</p>
+                <p><span class="first-word">T</span>echnologies used - Python(Pandas, Numpy, Matplotlib, Seaborn).</p>
+                <a href="https://github.com/sanjoymondal677/Exploratory-Data-Analysis-EDA-/blob/main/Big_Mart_Sales_Prediction.ipynb" class="github-link">GitHub Link</a>
+            </div>
+            <img src="./images/undraw_all_the_data_re_hh4w.svg" alt="Project 2 Image">
+        </div>
+
+        <div class="project">
+            <div class="project-details">
+                <h3>Credit Card Fraud Detection</h3>
+                <p><span class="first-word">A</span>pplied the features engineering on data set and also done the step backward feature selection.</p>
+                <p><span class="first-word">P</span>erform the Data analysis on the data set and draw insights(EDA).</p>  
+                <p><span class="first-word">U</span>sed classification Machine Learning Algorithms and find the accuracy scores(96%).</p>
+                <p><span class="first-word">T</span>echnologies used: Python,sklearn,ML-classiification Algo.</p>
+                <a href="https://github.com/sanjoymondal677/Machine-Learning-Projects-Supervised-learning-/blob/main/credit-card-fraud-detection-acc-96.ipynb" class="github-link">GitHub Link</a>
+            </div>
+            <img src="./images/undraw_success_factors_re_ce93.svg" alt="Project 2 Image">
+        </div>
+    </section>
+    <!-- <footer>
+        <p>&copy; 2023 sanjoymondal🙂</p>
+      </footer> -->
+
+
+
+</body>
+
+</html>

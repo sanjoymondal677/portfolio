@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pop-up Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #popup-container {
+            display: none;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #close-btn {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="popup-container">
+    <h2>Contact Me</h2>
+    <p><b>Gmail:</b> <a href="mailto:sanjoymondal.ok@gmail.com">sanjoymondal.ok@gmail.com</a></p>
+    <p><b>Phone:</b> +91-9339042826</p>
+    <!-- Add your contact form here -->
+
+    <button id="close-btn">Close</button>
+</div>
+
+<script>
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById('popup-container').style.display = 'block';
+    }
+
+    // Function to hide the popup and navigate to the home page
+    function hidePopup() {
+        document.getElementById('popup-container').style.display = 'none';
+        // Redirect to the home page only when the close button is clicked
+        window.location.href = 'index.html';
+        // Show the popup again
+        showPopup();
+    }
+
+    // Show the popup when the page is reloaded
+    window.onload = showPopup;
+
+    // Close the popup when the close button is clicked
+    document.getElementById('close-btn').addEventListener('click', function(event) {
+        hidePopup();
+        event.stopPropagation(); // Prevent the click event from propagating to the div
+    });
+
+    // Close the popup when the user clicks outside of it
+    document.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('popup-container')) {
+            hidePopup();
+        }
+    });
+</script>
+
+</body>
+</html>
